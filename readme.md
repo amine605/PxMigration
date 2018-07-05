@@ -52,8 +52,11 @@ You can also:
  - Add extra tables that can be migrated
 
 > Do not forget the to specify the source and the destination databases
+
 > Do not forgot to update the databases prefix
+
 > Make sure the the tables names must not contain the prefix
+
 > Do not add the configuration table (ps_configuration) to the migration process, Export the only data (customers,orders ... )
 ### Usage
 First you have to make a fresh Prestashop 1.7 installation to get a clean database
@@ -67,8 +70,10 @@ $ python PxMigration
 ![Script Execution](https://preview.ibb.co/igsgSJ/exec.png)
 ![Script Execution](https://preview.ibb.co/fkikMd/exec2.png)
 
-> When the migration process is fully possible, you will be asked to change the 
+> When the migration process is fully possible, you will be asked to make the changes permanent 
+
 > The data in the export database (The result Database) will be deleted
+
 ### Limitations
 - Both export and import databases must be on the same mysql server
 - The script Does not fix currepted data
